@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/todo-list
+    username: postgres
+    password: alfmah1324
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+      generate-ddl: true
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+  sql:
+    init:
+      platform: h2
+    devtools:
+      livereload:
+        enabled: true
